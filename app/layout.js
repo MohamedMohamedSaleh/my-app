@@ -19,7 +19,35 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <nav style={
+          {
+            width: "100%",
+            height: "50px",
+            background: "black",
+            color: "white",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }
+        }>
+          <ul style={{ listStyle: "none", display: "flex", gap: "16px" }}>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/articles">Articles</a>
+            </li>
+            <li>
+              <a href="/posts">Posts</a>
+            </li>
+            <li>
+              <a href="/articles/featuredArticles">Featured</a>
+            </li>
+          </ul>
+        </nav>
+        {children}
+        </body>
     </html>
   );
 }
