@@ -140,3 +140,18 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 }
+
+.myPost {
+  padding: 20px 20px 16px 40px;
+  width: 50%;
+  /* display: flex; */
+  margin: 10px;
+  flex-direction: column;
+  justify-content: left;
+  font-family: var(--font-geist-sans);
+  background-color: var(--background);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+}
